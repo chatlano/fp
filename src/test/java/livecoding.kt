@@ -6,4 +6,5 @@ class StructuresTest {
   @Test fun helloWorld() {
     println("Hello Immutable data structures!")
   }
+
 }
