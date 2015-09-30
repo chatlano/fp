@@ -1,0 +1,10 @@
+**/target
+**/classes
+**/checkouts
+**/out
+**/.idea
+**/server/data
+*.jar
+*.class
+*.iml
+*.log
