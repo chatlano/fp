@@ -79,16 +79,6 @@ class StructuresTest {
     assertEquals(120.0, l.product())
   }
 
-  fun <T> List<T>.append(ys: List<T>): List<T> = when(this) {
-    is List.Nil  -> ys
-    is List.Cons -> List.Cons(head, tail.append(ys))
-  }
-
-  @Test fun appendTest() {
-    val l1 = listOf(1, 2, 3)
-    val l2 = listOf(3, 4, 5)
-    println(l1.append(l2))
-  }
 
   fun <A,B> List<A>.map(f: (A) -> B): List<B> = when(this) {
     is List.Nil  -> List.Nil
