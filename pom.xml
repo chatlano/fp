@@ -9,7 +9,7 @@
 
     <properties>
         <logback.version>1.0.13</logback.version>
-        <kotlin.version>0.13.1514</kotlin.version>
+        <kotlin.version>0.14.449</kotlin.version>
     </properties>
 
     <repositories>
