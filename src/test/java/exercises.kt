@@ -57,11 +57,11 @@ class Ex1 {
     }
   }
 
-  fun listOf<T> (vararg xs: T): List<T> = when {
+  fun <T> listOf(vararg xs: T): List<T> = when {
     xs.isEmpty() -> List.Nil
-    xs.size() == 1 -> List.Cons(xs.get(0), List.Nil)
+    xs.size == 1 -> List.Cons(xs.get(0), List.Nil)
     else -> {
-      val tail = xs.copyOfRange(1, xs.size())
+      val tail = xs.copyOfRange(1, xs.size)
       List.Cons(xs.get(0), listOf(*tail))
     }
   }
